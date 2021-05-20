@@ -1,0 +1,7 @@
+{
+  "name": "wizard",
+  "description": "Wizard searcher",
+  "repository": "https://github.com/htmlcssphpjs/wizard",
+  "logo": "https://raw.githubusercontent.com/htmlcssphpjs/wizard/main/public/favicon.ico",
+  "keywords": ["searcher"]
+}

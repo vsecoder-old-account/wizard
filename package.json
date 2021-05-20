@@ -1,0 +1,19 @@
+{
+  "name": "codeinthedark",
+  "version": "14.05.2021",
+  "description": "codeinthedark",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+  },
+  "author": "vsecoder",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "firebase-admin": "^9.8.0",
+    "json-find": "^2.0.8",
+    "yaspeller": "^7.0.0"
+  }
+}

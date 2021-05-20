@@ -1,0 +1,25 @@
+<form method="GET" action="/">
+  <div class="container">
+    <input type="text" placeholder="Поиск..." name="q" autocomplete="off" required>
+    <div class="search"></div>
+  </div>
+</form>
+<div class="results">
+  <div class="q">
+    <h2>Ваш запрос: {{{q}}}</h2>
+    {{#each finde}}
+      <p><a href="{{{this.url}}}">{{{this.title}}}</a> <span>{{{this.description}}}</span></p>
+    {{/each}}
+  </div>
+</div>
+<script>
+  if (window.location.search) {
+    document.body.querySelector('.container').style.bottom = '1';
+    document.body.querySelector('.container input').value = '{{{q}}}';
+    document.title = 'Wizard - {{{q}}}'
+  } else {
+    document.body.querySelector('.container').style.bottom = '0';
+    document.body.querySelector('.results').style.display = 'none';
+  }
+</script>
+<!-- Страница сгенерирована за 0.000{{{ms}}} cекунд -->
