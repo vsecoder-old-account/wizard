@@ -1,7 +1,5 @@
 # Wizard
 
-## Лёгкий поисковик на Node JS
-
 ***Wizard - лёгкий поисковик на Node JS обрабатывающий GET запросы, и ищущий по Базе Данных FireBase подходящие сайты***
 
 ![1](https://raw.githubusercontent.com/htmlcssphpjs/wizard/main/md/1.png)
