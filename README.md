@@ -16,6 +16,8 @@
 
 ![3](https://raw.githubusercontent.com/htmlcssphpjs/wizard/main/md/3.png)
 
-***Так же(скоро) простые пользователи и создатели сайтов могут добавлять свои сайты в поисковик***
+***Так же простые пользователи и создатели сайтов могут добавлять свои сайты в поисковик***
 
 ![4](https://raw.githubusercontent.com/htmlcssphpjs/wizard/main/md/4.png)
+
+***Но для этого сайт должен обязательно иметь ```<title>Название</title>``` и ```<meta property="og:description" content="Описание">```***
