@@ -102,7 +102,7 @@ app.get('/add', function (req, res) {
 
 // admin
 app.get('/admin', function(req, res){
-  res.render('admim');
+  res.render('admin');
 });
 
 // 404 catch-all
