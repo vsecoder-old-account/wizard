@@ -10,10 +10,11 @@
   "author": "vsecoder",
   "license": "MIT",
   "dependencies": {
+    "cheerio": "^1.0.0-rc.9",
     "express": "^4.17.1",
     "express-handlebars": "^5.2.0",
     "firebase-admin": "^9.8.0",
     "json-find": "^2.0.8",
-    "yaspeller": "^7.0.0"
+    "request": "^2.88.2",
   }
 }
