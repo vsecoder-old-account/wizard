@@ -2,6 +2,7 @@
 const admin = require('firebase-admin');
 const config = require('./config.js');
 var read = '';
+var num = 0;
 admin.initializeApp({
     credential: admin.credential.cert({
         projectId: config.APPID,
@@ -10,10 +11,16 @@ admin.initializeApp({
     }),
     databaseURL: config.DATABASE_URL
 });
+var db = admin.database();
+var ref = db.ref("wizard");
+ref.on("value", function (snapshot) {
+  read = snapshot.val();
+  num = read.length;
+});
 
 //var serviceAccount = require("./firebase.json");
 
-function set_bd(title, url, description, num) {
+function set_bd(title, url, description) {
   if (title == undefined) {
     return false;
   } else {
@@ -29,7 +36,7 @@ function set_bd(title, url, description, num) {
   }
 }
 
-//set_bd("Google", "https://google.com", "Поиск информации в интернете: веб страницы, картинки, видео и многое другое.", 0);
+//set_bd("Google", "https://google.com", "Поиск информации в интернете: веб страницы, картинки, видео и многое другое.");
 
 function read_bd() {
   var db = admin.database();
