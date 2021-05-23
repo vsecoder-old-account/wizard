@@ -154,6 +154,10 @@ body {
   sans-serif;
 }
 
-h2, p, a {
+h2, p, a, h1 {
   color: rgb(252 252 252);
+}
+
+h1 {
+  margin: 50px;
 }
